@@ -1,10 +1,20 @@
 namespace CSCI455ProjectActual
 {
-    public partial class Form1 : Form
+    public partial class homePage : Form
     {
-        public Form1()
+        public homePage()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

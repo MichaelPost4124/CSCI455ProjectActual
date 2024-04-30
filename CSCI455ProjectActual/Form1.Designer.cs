@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            Login_Button = new Button();
+            SuspendLayout();
+            // 
+            // Login_Button
+            // 
+            Login_Button.Location = new Point(338, 263);
+            Login_Button.Name = "Login_Button";
+            Login_Button.Size = new Size(75, 23);
+            Login_Button.TabIndex = 0;
+            Login_Button.Text = "Login";
+            Login_Button.UseVisualStyleBackColor = true;
+            Login_Button.Click += button1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Login_Button);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button Login_Button;
     }
 }

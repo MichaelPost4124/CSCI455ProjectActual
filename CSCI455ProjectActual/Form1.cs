@@ -6,5 +6,10 @@ namespace CSCI455ProjectActual
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Text = "It Works!";
+        }
     }
 }

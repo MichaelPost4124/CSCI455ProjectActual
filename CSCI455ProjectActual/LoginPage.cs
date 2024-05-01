@@ -16,5 +16,10 @@ namespace CSCI455ProjectActual
         {
             InitializeComponent();
         }
+
+        private void Login_Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

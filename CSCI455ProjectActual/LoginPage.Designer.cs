@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             Login_UND = new PictureBox();
             Login_Button = new Button();
@@ -99,5 +100,14 @@
         private Button Login_Button;
         private TextBox Username_TextBox;
         private TextBox Password_TextBox;
+
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "LoginPage";
+        }
+
+        #endregion
+
     }
 }

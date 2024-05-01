@@ -28,6 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
+            Login_UND = new PictureBox();
+            Login_Button = new Button();
+            Username_TextBox = new TextBox();
+            Password_TextBox = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)Login_UND).BeginInit();
+            SuspendLayout();
+            // 
+            // Login_UND
+            // 
+            Login_UND.Image = (Image)resources.GetObject("Login_UND.Image");
+            Login_UND.Location = new Point(1, -2);
+            Login_UND.Name = "Login_UND";
+            Login_UND.Size = new Size(801, 101);
+            Login_UND.SizeMode = PictureBoxSizeMode.StretchImage;
+            Login_UND.TabIndex = 0;
+            Login_UND.TabStop = false;
+            // 
+            // Login_Button
+            // 
+            Login_Button.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Login_Button.Location = new Point(357, 325);
+            Login_Button.Name = "Login_Button";
+            Login_Button.Size = new Size(114, 44);
+            Login_Button.TabIndex = 1;
+            Login_Button.Text = "Login";
+            Login_Button.UseVisualStyleBackColor = true;
+            Login_Button.Click += Login_Button_Click;
+            // 
+            // Username_TextBox
+            // 
+            Username_TextBox.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Username_TextBox.Location = new Point(285, 189);
+            Username_TextBox.Name = "Username_TextBox";
+            Username_TextBox.PlaceholderText = "Username";
+            Username_TextBox.Size = new Size(267, 27);
+            Username_TextBox.TabIndex = 2;
+            Username_TextBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // Password_TextBox
+            // 
+            Password_TextBox.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Password_TextBox.Location = new Point(285, 235);
+            Password_TextBox.Name = "Password_TextBox";
+            Password_TextBox.PlaceholderText = "Password";
+            Password_TextBox.Size = new Size(267, 27);
+            Password_TextBox.TabIndex = 3;
+            Password_TextBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // LoginPage
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Password_TextBox);
+            Controls.Add(Username_TextBox);
+            Controls.Add(Login_Button);
+            Controls.Add(Login_UND);
+            Name = "LoginPage";
+            Text = "LoginPage";
+            ((System.ComponentModel.ISupportInitialize)Login_UND).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private PictureBox Login_UND;
+        private Button Login_Button;
+        private TextBox Username_TextBox;
+        private TextBox Password_TextBox;
+
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -35,5 +108,6 @@
         }
 
         #endregion
+
     }
 }

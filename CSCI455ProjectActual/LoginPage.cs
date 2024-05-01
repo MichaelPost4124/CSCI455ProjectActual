@@ -16,5 +16,14 @@ namespace CSCI455ProjectActual
         {
             InitializeComponent();
         }
+
+
+        // Makes homepage Invisible and opens Navigation Page
+        private void Login_Button_Click(object sender, EventArgs e)
+        {
+            homePage homePage = new homePage();
+            this.Visible = false;
+            homePage.Show();
+        }
     }
 }

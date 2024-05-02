@@ -59,6 +59,7 @@
             button3.TabIndex = 3;
             button3.Text = "Prescriptions";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label2
             // 
@@ -93,6 +94,7 @@
             button5.TabIndex = 6;
             button5.Text = "Settings";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Paitent_Records_Button
             // 
@@ -104,6 +106,7 @@
             Paitent_Records_Button.TabIndex = 7;
             Paitent_Records_Button.Text = "Records";
             Paitent_Records_Button.UseVisualStyleBackColor = false;
+            Paitent_Records_Button.Click += Paitent_Records_Button_Click;
             // 
             // homePage
             // 

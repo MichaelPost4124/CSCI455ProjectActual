@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mysqlx.Crud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -63,6 +64,10 @@ namespace CSCI455ProjectActual
 
         private void visitSummeryButton_Click(object sender, EventArgs e)
         {
+            //string path = Path.GetDirectoryName(OpenFileDialog.03_01_2024.pdf);
+            //WebBrowserBase.           
+            //string filename = "03_01_2024 Visit Summery.pdf";
+            //System.Diagnostics.Process.Start(filename);
         }
 
         private void recordsBox_SelectedIndexChanged(object sender, EventArgs e)

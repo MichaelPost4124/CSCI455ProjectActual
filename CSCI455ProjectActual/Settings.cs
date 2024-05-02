@@ -15,6 +15,14 @@ namespace CSCI455ProjectActual
         public Settings()
         {
             InitializeComponent();
+            if (Program.dark)
+            {
+                button3.BackColor = Color.Black;
+                button4.BackColor = Color.Black;
+                button5.BackColor = Color.Black;
+                Paitent_Records_Button.BackColor = Color.Black;
+                darkButton.BackColor = Color.Black;
+            }
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -52,6 +60,34 @@ namespace CSCI455ProjectActual
             Settings settings = new Settings();
             this.Close();
             settings.Show();
+        }
+
+        private void darkButton_Click(object sender, EventArgs e)
+        {
+            if (Program.dark)
+            {
+                Program.dark = false;
+            }
+            else
+            {
+                Program.dark = true;
+            }
+            if (Program.dark)
+            {
+                button3.BackColor = Color.Black;
+                button4.BackColor = Color.Black;
+                button5.BackColor = Color.Black;
+                Paitent_Records_Button.BackColor = Color.Black;
+                darkButton.BackColor = Color.Black;
+            }
+            if (!Program.dark)
+            {
+                button3.BackColor = Color.Green;
+                button4.BackColor = Color.Green;
+                button5.BackColor = Color.Green;
+                Paitent_Records_Button.BackColor = Color.Green;
+                darkButton.BackColor = Color.Green;
+            }
         }
     }
 }

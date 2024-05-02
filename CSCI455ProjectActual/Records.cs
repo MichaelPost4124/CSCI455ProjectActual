@@ -15,6 +15,13 @@ namespace CSCI455ProjectActual
         public Records()
         {
             InitializeComponent();
+            if (Program.dark)
+            {
+                button3.BackColor = Color.Black;
+                button4.BackColor = Color.Black;
+                button5.BackColor = Color.Black;
+                Paitent_Records_Button.BackColor = Color.Black;
+            }
         }
 
         //patient data button click
@@ -47,6 +54,19 @@ namespace CSCI455ProjectActual
             Settings settings = new Settings();
             this.Close();
             settings.Show();
+        }
+
+        private void Records_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void visitSummeryButton_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void recordsBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

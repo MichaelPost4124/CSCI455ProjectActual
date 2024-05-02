@@ -2,6 +2,7 @@ namespace CSCI455ProjectActual
 {
     internal static class Program
     {
+        public static Boolean dark = false;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -14,4 +15,4 @@ namespace CSCI455ProjectActual
             Application.Run(new LoginPage());
         }
     }
-}
+}   

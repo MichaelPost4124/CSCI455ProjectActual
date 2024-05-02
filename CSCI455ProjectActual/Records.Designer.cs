@@ -32,6 +32,8 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
+            recordsBox = new ComboBox();
+            visitSummeryButton = new Button();
             SuspendLayout();
             // 
             // Paitent_Records_Button
@@ -82,17 +84,44 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
+            // recordsBox
+            // 
+            recordsBox.AllowDrop = true;
+            recordsBox.FormattingEnabled = true;
+            recordsBox.Items.AddRange(new object[] { "03-01-2024" });
+            recordsBox.Location = new Point(348, 145);
+            recordsBox.Name = "recordsBox";
+            recordsBox.Size = new Size(114, 23);
+            recordsBox.TabIndex = 12;
+            recordsBox.Text = "MM-DD-YYYY";
+            recordsBox.SelectedIndexChanged += recordsBox_SelectedIndexChanged;
+            // 
+            // visitSummeryButton
+            // 
+            visitSummeryButton.BackColor = Color.Green;
+            visitSummeryButton.ForeColor = SystemColors.ButtonHighlight;
+            visitSummeryButton.Location = new Point(321, 213);
+            visitSummeryButton.Name = "visitSummeryButton";
+            visitSummeryButton.Size = new Size(162, 23);
+            visitSummeryButton.TabIndex = 13;
+            visitSummeryButton.Text = "View Visit Summery";
+            visitSummeryButton.UseVisualStyleBackColor = false;
+            visitSummeryButton.Click += visitSummeryButton_Click;
+            // 
             // Records
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(visitSummeryButton);
+            Controls.Add(recordsBox);
             Controls.Add(Paitent_Records_Button);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Name = "Records";
             Text = "Records";
+            Load += Records_Load;
             ResumeLayout(false);
         }
 
@@ -102,5 +131,7 @@
         private Button button5;
         private Button button4;
         private Button button3;
+        private ComboBox recordsBox;
+        private Button visitSummeryButton;
     }
 }

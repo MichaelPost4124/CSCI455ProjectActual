@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             Login_UND = new PictureBox();
             Login_Button = new Button();
@@ -102,4 +101,4 @@
         private TextBox Password_TextBox;
 
     }
-    }
+}

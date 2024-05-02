@@ -44,6 +44,7 @@
             Paitent_Records_Button.TabIndex = 11;
             Paitent_Records_Button.Text = "Records";
             Paitent_Records_Button.UseVisualStyleBackColor = false;
+            Paitent_Records_Button.Click += Paitent_Records_Button_Click;
             // 
             // button5
             // 
@@ -55,6 +56,7 @@
             button5.TabIndex = 10;
             button5.Text = "Settings";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -78,6 +80,7 @@
             button3.TabIndex = 8;
             button3.Text = "Prescriptions";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // PatientDataPage
             // 

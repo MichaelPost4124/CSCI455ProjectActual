@@ -19,9 +19,21 @@ namespace CSCI455ProjectActual
         // Makes homepage Invisible and opens Navigation Page
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            homePage homePage = new homePage();
-            this.Visible = false;
-            homePage.Show();
+            if (Username_TextBox.Equals("John") && Password_TextBox.Equals("password"))
+            {
+                homePage homePage = new homePage();
+                this.Visible = false;
+                homePage.Show();
+            }
+            else
+            {
+               
+            }
+        }
+
+        private void Username_TextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

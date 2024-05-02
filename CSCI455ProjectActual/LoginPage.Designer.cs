@@ -66,6 +66,7 @@
             Username_TextBox.Size = new Size(267, 27);
             Username_TextBox.TabIndex = 2;
             Username_TextBox.TextAlign = HorizontalAlignment.Center;
+            Username_TextBox.TextChanged += Username_TextBox_TextChanged;
             // 
             // Password_TextBox
             // 

@@ -16,5 +16,12 @@ namespace CSCI455ProjectActual
         {
 
         }
+        //patient data button click
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PatientDataPage patientDataPage = new PatientDataPage();
+            this.Close();
+            patientDataPage.Show();
+        }
     }
 }

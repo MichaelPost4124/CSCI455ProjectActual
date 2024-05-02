@@ -22,6 +22,7 @@ namespace CSCI455ProjectActual
                 button4.BackColor = Color.Black;
                 button5.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
+                visitSummeryButton.BackColor = Color.Black;
             }
         }
 

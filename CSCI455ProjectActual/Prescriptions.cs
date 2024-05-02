@@ -17,6 +17,15 @@ namespace CSCI455ProjectActual
         public Prescriptions()
         {
             InitializeComponent();
+            if (Program.dark)
+            {
+                button3.BackColor = Color.Black;
+                button4.BackColor = Color.Black;
+                button5.BackColor = Color.Black;
+                Paitent_Records_Button.BackColor = Color.Black;
+                panel1.BackColor = Color.DarkGray;
+                
+            }
         }
 
         //patient data button click

@@ -10,10 +10,10 @@ namespace CSCI455ProjectActual
 {
     internal class Database
     {
-        static readonly string server = "localhost";
-        static readonly string user = "root";
-        static readonly string password = "Map0614!!";
-        static readonly string database = "prescriptioninfodatabase";
+        static readonly string server = "sql5.freesqldatabase.com";
+        static readonly string user = "sql5703611";
+        static readonly string password = "HmvTQjaPi9";
+        static readonly string database = "sql5703611";
         public static string connection_string = "server='" + server + "'; user= '" + user + "'; database= '" + database + "'; password= '" + password + "'";
         public MySqlConnection mySqlConnection = new MySqlConnection(connection_string);
         public bool connect_db()

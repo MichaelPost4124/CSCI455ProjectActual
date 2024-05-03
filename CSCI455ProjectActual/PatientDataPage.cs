@@ -69,7 +69,7 @@ namespace CSCI455ProjectActual
             var database = new Database();
             if (database.connect_db())
             {
-                string query = "SELECT * FROM patientinfo";
+                string query = "SELECT * FROM patientInfo";
                 MySqlCommand mySqlCommand = new MySqlCommand(query);
                 mySqlCommand.Connection = database.mySqlConnection;
                 MySqlDataAdapter adapter = new MySqlDataAdapter();

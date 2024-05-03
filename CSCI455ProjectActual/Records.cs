@@ -65,6 +65,8 @@ namespace CSCI455ProjectActual
 
         private void visitSummeryButton_Click(object sender, EventArgs e)
         {
+            viewable_pdf viewable_Pdf = new viewable_pdf();
+            viewable_Pdf.Show();
             //string path = Path.GetDirectoryName(OpenFileDialog.03_01_2024.pdf);
             //WebBrowserBase.           
             //string filename = "03_01_2024 Visit Summery.pdf";

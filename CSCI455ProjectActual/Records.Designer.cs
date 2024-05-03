@@ -89,7 +89,7 @@
             recordsBox.AllowDrop = true;
             recordsBox.FormattingEnabled = true;
             recordsBox.Items.AddRange(new object[] { "03-01-2024" });
-            recordsBox.Location = new Point(348, 205);
+            recordsBox.Location = new Point(338, 205);
             recordsBox.Name = "recordsBox";
             recordsBox.Size = new Size(114, 23);
             recordsBox.TabIndex = 12;
@@ -100,7 +100,7 @@
             // 
             visitSummeryButton.BackColor = Color.Green;
             visitSummeryButton.ForeColor = SystemColors.ButtonHighlight;
-            visitSummeryButton.Location = new Point(322, 250);
+            visitSummeryButton.Location = new Point(319, 250);
             visitSummeryButton.Name = "visitSummeryButton";
             visitSummeryButton.Size = new Size(162, 23);
             visitSummeryButton.TabIndex = 13;

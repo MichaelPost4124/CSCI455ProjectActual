@@ -22,6 +22,16 @@ namespace CSCI455ProjectActual
             if ((Username_TextBox.Text).Equals("John") && (Password_TextBox.Text).Equals("password"))
             {
                 homePage homePage = new homePage();
+                Program.isPatient = true;
+                this.Visible = false;
+                homePage.Show();
+                label1.Visible = false;
+            }
+            //Doctor Login
+            else if ((Username_TextBox.Text).Equals("Jane") && (Password_TextBox.Text).Equals("password1"))
+            {
+                homePage homePage = new homePage();
+                Program.isPatient = false;
                 this.Visible = false;
                 homePage.Show();
                 label1.Visible = false;

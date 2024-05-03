@@ -24,7 +24,7 @@ namespace CSCI455ProjectActual
                 button5.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
                 panel1.BackColor = Color.DarkGray;
-                
+
             }
         }
 
@@ -96,6 +96,11 @@ namespace CSCI455ProjectActual
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

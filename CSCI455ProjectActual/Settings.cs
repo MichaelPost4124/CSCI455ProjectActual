@@ -20,6 +20,7 @@ namespace CSCI455ProjectActual
                 button3.BackColor = Color.Black;
                 button4.BackColor = Color.Black;
                 button5.BackColor = Color.Black;
+                panel1.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
                 darkButton.BackColor = Color.Black;
                 logOutButton.BackColor = Color.Black;
@@ -78,6 +79,7 @@ namespace CSCI455ProjectActual
                 button3.BackColor = Color.Black;
                 button4.BackColor = Color.Black;
                 button5.BackColor = Color.Black;
+                panel1.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
                 darkButton.BackColor = Color.Black;
                 logOutButton.BackColor = Color.Black;
@@ -87,6 +89,7 @@ namespace CSCI455ProjectActual
                 button3.BackColor = Color.Green;
                 button4.BackColor = Color.Green;
                 button5.BackColor = Color.Green;
+                panel1.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Green;
                 darkButton.BackColor = Color.Green;
                 logOutButton.BackColor = Color.Green;

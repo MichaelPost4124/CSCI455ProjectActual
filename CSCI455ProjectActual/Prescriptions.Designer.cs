@@ -109,12 +109,13 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(108, 438);
             panel1.TabIndex = 13;
+            panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(17, 9);
+            label1.Location = new Point(11, 19);
             label1.Name = "label1";
             label1.Size = new Size(75, 15);
             label1.TabIndex = 14;

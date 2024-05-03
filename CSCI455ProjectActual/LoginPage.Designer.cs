@@ -33,6 +33,7 @@
             Login_Button = new Button();
             Username_TextBox = new TextBox();
             Password_TextBox = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)Login_UND).BeginInit();
             SuspendLayout();
             // 
@@ -78,11 +79,25 @@
             Password_TextBox.TabIndex = 3;
             Password_TextBox.TextAlign = HorizontalAlignment.Center;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.DarkRed;
+            label1.Location = new Point(225, 279);
+            label1.Name = "label1";
+            label1.Size = new Size(386, 32);
+            label1.TabIndex = 4;
+            label1.Text = "Incorrect Username or Password";
+            label1.Visible = false;
+            label1.Click += label1_Click;
+            // 
             // LoginPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(Password_TextBox);
             Controls.Add(Username_TextBox);
             Controls.Add(Login_Button);
@@ -100,6 +115,6 @@
         private Button Login_Button;
         private TextBox Username_TextBox;
         private TextBox Password_TextBox;
-
+        private Label label1;
     }
 }

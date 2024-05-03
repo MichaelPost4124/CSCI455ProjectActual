@@ -22,6 +22,7 @@ namespace CSCI455ProjectActual
                 button5.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
                 darkButton.BackColor = Color.Black;
+                logOutButton.BackColor = Color.Black;
             }
         }
 
@@ -79,6 +80,7 @@ namespace CSCI455ProjectActual
                 button5.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
                 darkButton.BackColor = Color.Black;
+                logOutButton.BackColor = Color.Black;
             }
             if (!Program.dark)
             {
@@ -87,7 +89,15 @@ namespace CSCI455ProjectActual
                 button5.BackColor = Color.Green;
                 Paitent_Records_Button.BackColor = Color.Green;
                 darkButton.BackColor = Color.Green;
+                logOutButton.BackColor = Color.Green;
             }
+        }
+
+        private void logOutButton_Click(object sender, EventArgs e)
+        {
+            LoginPage loginPage = new LoginPage();
+            this.Close();
+            loginPage.Show();
         }
     }
 }

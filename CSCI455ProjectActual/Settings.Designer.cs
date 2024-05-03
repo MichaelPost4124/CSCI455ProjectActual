@@ -33,6 +33,7 @@
             button4 = new Button();
             button3 = new Button();
             darkButton = new Button();
+            logOutButton = new Button();
             SuspendLayout();
             // 
             // Paitent_Records_Button
@@ -95,11 +96,24 @@
             darkButton.UseVisualStyleBackColor = false;
             darkButton.Click += darkButton_Click;
             // 
+            // logOutButton
+            // 
+            logOutButton.BackColor = Color.Green;
+            logOutButton.ForeColor = SystemColors.ButtonHighlight;
+            logOutButton.Location = new Point(323, 195);
+            logOutButton.Name = "logOutButton";
+            logOutButton.Size = new Size(135, 26);
+            logOutButton.TabIndex = 17;
+            logOutButton.Text = "Log Out";
+            logOutButton.UseVisualStyleBackColor = false;
+            logOutButton.Click += logOutButton_Click;
+            // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(logOutButton);
             Controls.Add(darkButton);
             Controls.Add(Paitent_Records_Button);
             Controls.Add(button5);
@@ -119,5 +133,6 @@
         private Button button4;
         private Button button3;
         private Button darkButton;
+        private Button logOutButton;
     }
 }

@@ -89,7 +89,7 @@ namespace CSCI455ProjectActual
                 button3.BackColor = Color.Green;
                 button4.BackColor = Color.Green;
                 button5.BackColor = Color.Green;
-                panel1.BackColor = Color.Black;
+                panel1.BackColor = Color.Green;
                 Paitent_Records_Button.BackColor = Color.Green;
                 darkButton.BackColor = Color.Green;
                 logOutButton.BackColor = Color.Green;

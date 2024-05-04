@@ -24,6 +24,7 @@ namespace CSCI455ProjectActual
                 Paitent_Records_Button.BackColor = Color.Black;
                 darkButton.BackColor = Color.Black;
                 logOutButton.BackColor = Color.Black;
+                desktopButton.BackColor = Color.Black;
             }
         }
 
@@ -83,6 +84,7 @@ namespace CSCI455ProjectActual
                 Paitent_Records_Button.BackColor = Color.Black;
                 darkButton.BackColor = Color.Black;
                 logOutButton.BackColor = Color.Black;
+                desktopButton.BackColor = Color.Black;
             }
             if (!Program.dark)
             {
@@ -93,6 +95,7 @@ namespace CSCI455ProjectActual
                 Paitent_Records_Button.BackColor = Color.Green;
                 darkButton.BackColor = Color.Green;
                 logOutButton.BackColor = Color.Green;
+                desktopButton.BackColor = Color.Green;
             }
         }
 
@@ -101,6 +104,11 @@ namespace CSCI455ProjectActual
             LoginPage loginPage = new LoginPage();
             this.Close();
             loginPage.Show();
+        }
+
+        private void desktopButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

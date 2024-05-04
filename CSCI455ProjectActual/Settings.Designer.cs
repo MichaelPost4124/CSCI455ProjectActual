@@ -36,6 +36,7 @@
             logOutButton = new Button();
             panel1 = new Panel();
             label1 = new Label();
+            desktopButton = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             // 
             darkButton.BackColor = Color.Green;
             darkButton.ForeColor = SystemColors.ButtonHighlight;
-            darkButton.Location = new Point(323, 254);
+            darkButton.Location = new Point(393, 301);
             darkButton.Name = "darkButton";
             darkButton.Size = new Size(135, 26);
             darkButton.TabIndex = 16;
@@ -103,7 +104,7 @@
             // 
             logOutButton.BackColor = Color.Green;
             logOutButton.ForeColor = SystemColors.ButtonHighlight;
-            logOutButton.Location = new Point(323, 195);
+            logOutButton.Location = new Point(393, 221);
             logOutButton.Name = "logOutButton";
             logOutButton.Size = new Size(135, 26);
             logOutButton.TabIndex = 17;
@@ -134,11 +135,24 @@
             label1.TabIndex = 14;
             label1.Text = "Settings";
             // 
+            // desktopButton
+            // 
+            desktopButton.BackColor = Color.Green;
+            desktopButton.ForeColor = SystemColors.ButtonHighlight;
+            desktopButton.Location = new Point(393, 141);
+            desktopButton.Name = "desktopButton";
+            desktopButton.Size = new Size(135, 26);
+            desktopButton.TabIndex = 19;
+            desktopButton.Text = "Exit To Desktop";
+            desktopButton.UseVisualStyleBackColor = false;
+            desktopButton.Click += desktopButton_Click;
+            // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(desktopButton);
             Controls.Add(panel1);
             Controls.Add(logOutButton);
             Controls.Add(darkButton);
@@ -161,5 +175,6 @@
         private Button logOutButton;
         private Panel panel1;
         private Label label1;
+        private Button desktopButton;
     }
 }

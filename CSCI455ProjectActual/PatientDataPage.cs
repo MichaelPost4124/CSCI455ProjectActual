@@ -25,6 +25,10 @@ namespace CSCI455ProjectActual
                 Paitent_Records_Button.BackColor = Color.Black;
                 panel1.BackColor = Color.DarkGray;
             }
+            if(Program.isPatient)
+            {
+                dataGridViewMyAllData.ReadOnly = true;
+            }
         }
 
         //patient data button click

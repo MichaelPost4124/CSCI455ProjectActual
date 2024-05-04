@@ -9,11 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CSCI455ProjectActual
 {
     public partial class Prescriptions : Form
     {
+        Database database = new Database();
+        MySqlCommand cmd;
+        MySqlDataAdapter adpt;
+        DataTable dt;
+        int prescription_id;
         public Prescriptions()
         {
             InitializeComponent();
@@ -71,7 +77,6 @@ namespace CSCI455ProjectActual
 
         public void loadData()
         {
-            var database = new Database();
             if (database.connect_db())
             {
                 string query = "SELECT * FROM prescriptionInfo";
@@ -96,7 +101,13 @@ namespace CSCI455ProjectActual
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            prescription_id = Convert.ToInt32(dataGridViewMyAllData.Rows[e.RowIndex].Cells[0].Value.ToString());
+            nameBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[1].Value.ToString();
+            dateBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[2].Value.ToString();
+            amountBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[3].Value.ToString();
+            instructionsBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[4].Value.ToString();
+            refillsBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[5].Value.ToString();
+            effectsBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -107,6 +118,38 @@ namespace CSCI455ProjectActual
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                database.mySqlConnection.Open();
+                cmd = new MySqlCommand("update prescriptionInfo set PrescriptionName = '" + nameBox.Text + "', DatePrescribed = '" + dateBox.Text + "', AmountPrescribed = '" +
+                    amountBox.Text + "', Instructions = '" + instructionsBox.Text + "', Refills = '" + refillsBox.Text + "', SideEffects = '" + effectsBox.Text +
+                     "' where prescription_id = '" + prescription_id + "'", database.mySqlConnection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Record was Successfully Updated");
+                database.mySqlConnection.Close();
+                loadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void insertBtn_Click(object sender, EventArgs e)
+        {
+            database.mySqlConnection.Open();
+            cmd = new MySqlCommand("insert into prescriptionInfo values('" + prescription_id + "','" + nameBox.Text + "','" + dateBox.Text +
+                "','" + amountBox.Text + "','" + instructionsBox.Text +
+                "','" + refillsBox.Text + "','" + effectsBox.Text +
+                 "')", database.mySqlConnection);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Data was Saved in Database");
+            database.mySqlConnection.Close();
+            loadData();
         }
     }
 }

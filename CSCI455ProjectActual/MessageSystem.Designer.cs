@@ -36,7 +36,6 @@
             newMessageBox = new TextBox();
             PatientComboBox = new ComboBox();
             viewMessageButton = new Button();
-            folderBrowserDialog1 = new FolderBrowserDialog();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -222,6 +221,5 @@
         private ComboBox PatientComboBox;
         private Button viewMessageButton;
         private Button MessagesButton;
-        private FolderBrowserDialog folderBrowserDialog1;
     }
 }

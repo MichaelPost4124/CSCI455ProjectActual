@@ -20,6 +20,8 @@ namespace CSCI455ProjectActual
         MySqlDataAdapter adpt;
         DataTable dt;
         int prescription_id;
+        public static readonly string[] notAllowed = { "saquinavir", "cimetidine", "fentanyl", 
+            "oxycodone", "desmopressin", "morphine" };
         public Prescriptions()
         {
             InitializeComponent();
@@ -123,34 +125,48 @@ namespace CSCI455ProjectActual
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            try
+            int pos = Array.IndexOf(notAllowed, nameBox.Text.ToLower());
+            if(pos > -1)
             {
-                database.mySqlConnection.Open();
-                cmd = new MySqlCommand("update prescriptionInfo set PrescriptionName = '" + nameBox.Text + "', DatePrescribed = '" + dateBox.Text + "', AmountPrescribed = '" +
-                    amountBox.Text + "', Instructions = '" + instructionsBox.Text + "', Refills = '" + refillsBox.Text + "', SideEffects = '" + effectsBox.Text +
-                     "' where prescription_id = '" + prescription_id + "'", database.mySqlConnection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Record was Successfully Updated");
-                database.mySqlConnection.Close();
-                loadData();
-            }
-            catch (Exception ex)
+                MessageBox.Show("This Drug Interacts with Currently Prescribed Drugs.");
+            } else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    database.mySqlConnection.Open();
+                    cmd = new MySqlCommand("update prescriptionInfo set PrescriptionName = '" + nameBox.Text + "', DatePrescribed = '" + dateBox.Text + "', AmountPrescribed = '" +
+                        amountBox.Text + "', Instructions = '" + instructionsBox.Text + "', Refills = '" + refillsBox.Text + "', SideEffects = '" + effectsBox.Text +
+                         "' where prescription_id = '" + prescription_id + "'", database.mySqlConnection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Record was Successfully Updated");
+                    database.mySqlConnection.Close();
+                    loadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
         private void insertBtn_Click(object sender, EventArgs e)
         {
-            database.mySqlConnection.Open();
-            cmd = new MySqlCommand("insert into prescriptionInfo values('" + prescription_id + "','" + nameBox.Text + "','" + dateBox.Text +
-                "','" + amountBox.Text + "','" + instructionsBox.Text +
-                "','" + refillsBox.Text + "','" + effectsBox.Text +
-                 "')", database.mySqlConnection);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Data was Saved in Database");
-            database.mySqlConnection.Close();
-            loadData();
+            int pos = Array.IndexOf(notAllowed, nameBox.Text.ToLower());
+            if (pos > -1)
+            {
+                MessageBox.Show("This Drug Interacts with Currently Prescribed Drugs.");
+            } else
+            {
+                database.mySqlConnection.Open();
+                cmd = new MySqlCommand("insert into prescriptionInfo values('" + prescription_id + "','" + nameBox.Text + "','" + dateBox.Text +
+                    "','" + amountBox.Text + "','" + instructionsBox.Text +
+                    "','" + refillsBox.Text + "','" + effectsBox.Text +
+                     "')", database.mySqlConnection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data was Saved in Database");
+                database.mySqlConnection.Close();
+                loadData();
+            }
         }
 
         private void Messages_Click(object sender, EventArgs e)

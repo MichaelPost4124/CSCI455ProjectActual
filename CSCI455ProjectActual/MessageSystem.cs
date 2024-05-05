@@ -32,6 +32,10 @@ namespace CSCI455ProjectActual
                 viewMessageButton.Visible = false;
                 PatientComboBox.Visible = false;
             }
+            if (Program.fullscreen) { // set fullscreen
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+            }
 
         }
         //reads the text file for the doctor

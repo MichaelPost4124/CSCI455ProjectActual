@@ -36,10 +36,10 @@
             Paitent_Records_Button = new Button();
             MessagePCP = new Button();
             SuspendLayout();
-            // 
-            // label1
-            // 
+
+            // Label
             label1.AutoSize = true;
+            label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.AppWorkspace;
             label1.Location = new Point(203, 131);
@@ -49,9 +49,8 @@
             label1.Text = "Welcome to the Pateint Records \r\nManagement System";
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += label1_Click;
-            // 
-            // button3
-            // 
+
+            // Button 3 (Prescriptions)
             button3.BackColor = Color.Green;
             button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(213, 394);
@@ -61,10 +60,11 @@
             button3.Text = "Prescriptions";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
-            // 
-            // label2
-            // 
+            button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Label 2
             label2.AutoSize = true;
+            label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.AppWorkspace;
             label2.Location = new Point(349, 324);
@@ -72,9 +72,8 @@
             label2.Size = new Size(104, 25);
             label2.TabIndex = 4;
             label2.Text = "Naviagtion";
-            // 
-            // button4
-            // 
+
+            // Button 4 (Patient Info)
             button4.BackColor = Color.Green;
             button4.ForeColor = SystemColors.ButtonHighlight;
             button4.Location = new Point(89, 394);
@@ -84,9 +83,9 @@
             button4.Text = "Patient Info";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
-            // 
-            // button5
-            // 
+            button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Button 5 (Settings)
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
             button5.Location = new Point(623, 394);
@@ -96,9 +95,9 @@
             button5.Text = "Settings";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
-            // 
-            // Paitent_Records_Button
-            // 
+            button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Button for Patient Records
             Paitent_Records_Button.BackColor = Color.Green;
             Paitent_Records_Button.ForeColor = SystemColors.ButtonHighlight;
             Paitent_Records_Button.Location = new Point(349, 394);
@@ -108,9 +107,9 @@
             Paitent_Records_Button.Text = "Records";
             Paitent_Records_Button.UseVisualStyleBackColor = false;
             Paitent_Records_Button.Click += Paitent_Records_Button_Click;
-            // 
-            // MessagePCP
-            // 
+            Paitent_Records_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Button for messaging PCP
             MessagePCP.BackColor = Color.Green;
             MessagePCP.ForeColor = SystemColors.ButtonHighlight;
             MessagePCP.Location = new Point(484, 394);
@@ -120,6 +119,8 @@
             MessagePCP.Text = "Message PCP";
             MessagePCP.UseVisualStyleBackColor = false;
             MessagePCP.Click += MessagePCP_Click;
+            MessagePCP.Anchor = System.Windows.Forms.AnchorStyles.None;
+
             // 
             // homePage
             // 

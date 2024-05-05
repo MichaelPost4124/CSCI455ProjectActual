@@ -53,6 +53,24 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewMyAllData).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
+
+            // setting anchor for fullscreen
+            dataGridViewMyAllData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            updateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            insertBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            effectsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            refillsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            instructionsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            amountBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            dateBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            nameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+
             // 
             // Paitent_Records_Button
             // 

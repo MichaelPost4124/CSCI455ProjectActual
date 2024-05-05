@@ -37,14 +37,14 @@ namespace CSCI455ProjectActual
         //reads the text file for the doctor
         private void readLogs()
         {
-            string content = File.ReadAllText(@"rawMessages/John_Doe.txt");
+            string content = File.ReadAllText(folderBrowserDialog1.SelectedPath);
             richTextBox1.Text = content;
         }
         //adds to the text file for conversation
         private void updateLogs(string text)
         {
             String toBeAdded;
-            using (StreamWriter writer = new StreamWriter(@"rawMessages/John_Doe.txt", true))
+            using (StreamWriter writer = new StreamWriter(folderBrowserDialog1.SelectedPath, true))
             {
                 if (Program.isPatient)
                 {

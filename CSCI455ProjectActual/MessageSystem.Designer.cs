@@ -203,6 +203,7 @@
             Controls.Add(richTextBox1);
             Controls.Add(panel1);
             Name = "MessageSystem";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MessageSystem";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

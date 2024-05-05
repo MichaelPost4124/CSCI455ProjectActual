@@ -289,6 +289,7 @@
             Controls.Add(panel1);
             Controls.Add(dataGridViewMyAllData);
             Name = "Prescriptions";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Prescriptions";
             Load += Prescriptions_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewMyAllData).EndInit();

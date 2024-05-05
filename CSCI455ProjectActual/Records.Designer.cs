@@ -157,6 +157,7 @@
             Controls.Add(visitSummeryButton);
             Controls.Add(recordsBox);
             Name = "Records";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Records";
             Load += Records_Load;
             panel1.ResumeLayout(false);

@@ -171,6 +171,7 @@
             Controls.Add(logOutButton);
             Controls.Add(darkButton);
             Name = "Settings";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Settings";
             Load += Settings_Load;
             panel1.ResumeLayout(false);

@@ -134,6 +134,7 @@
             Controls.Add(button3);
             Controls.Add(label1);
             Name = "homePage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             ResumeLayout(false);
             PerformLayout();

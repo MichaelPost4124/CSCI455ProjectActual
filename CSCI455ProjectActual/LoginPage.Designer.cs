@@ -103,6 +103,7 @@
             Controls.Add(Login_Button);
             Controls.Add(Login_UND);
             Name = "LoginPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginPage";
             ((System.ComponentModel.ISupportInitialize)Login_UND).EndInit();
             ResumeLayout(false);

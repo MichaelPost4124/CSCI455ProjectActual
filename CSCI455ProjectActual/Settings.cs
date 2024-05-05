@@ -26,12 +26,17 @@ namespace CSCI455ProjectActual
                 logOutButton.BackColor = Color.Black;
                 desktopButton.BackColor = Color.Black;
                 MessagesButton.BackColor = Color.Black;
+                fullscreenButton.BackColor = Color.Black;
+            }
+            if (Program.fullscreen) { // set fullscreen
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
             }
         }
 
         private void Settings_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         //patient data button click
@@ -87,6 +92,7 @@ namespace CSCI455ProjectActual
                 logOutButton.BackColor = Color.Black;
                 desktopButton.BackColor = Color.Black;
                 MessagesButton.BackColor = Color.Black;
+                fullscreenButton.BackColor = Color.Black;
             }
             if (!Program.dark)
             {
@@ -99,6 +105,7 @@ namespace CSCI455ProjectActual
                 logOutButton.BackColor = Color.Green;
                 desktopButton.BackColor = Color.Green;
                 MessagesButton.BackColor = Color.Green;
+                fullscreenButton.BackColor = Color.Green;
             }
         }
 
@@ -120,5 +127,24 @@ namespace CSCI455ProjectActual
             this.Close();
             messageSystem.Show();
         }
+
+
+        private void fullscreenButton_Click(object sender, EventArgs e) { // Button to toggle fullscreen
+       
+            if (Program.fullscreen) {
+                Program.fullscreen = false;
+            } else {
+                Program.fullscreen = true;
+            }
+
+            if (Program.fullscreen) { // set fullscreen
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+            } else { // set windowed
+                FormBorderStyle = FormBorderStyle.Sizable;
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
     }
 }

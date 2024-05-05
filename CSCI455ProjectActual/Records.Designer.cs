@@ -39,6 +39,11 @@
             label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
+
+            // set anchor for fullscreen
+            recordsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            visitSummeryButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+
             // 
             // Paitent_Records_Button
             // 
@@ -123,7 +128,7 @@
             panel1.Controls.Add(Paitent_Records_Button);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(108, 438);
+            panel1.Size = new Size(108, 9000);
             panel1.TabIndex = 14;
             // 
             // MessagesButton

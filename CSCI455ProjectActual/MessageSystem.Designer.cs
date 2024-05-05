@@ -1,7 +1,5 @@
-﻿namespace CSCI455ProjectActual
-{
-    partial class MessageSystem
-    {
+﻿namespace CSCI455ProjectActual {
+    partial class MessageSystem {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -11,10 +9,8 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -26,8 +22,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             panel1 = new Panel();
             MessagesButton = new Button();
             label1 = new Label();
@@ -56,7 +51,7 @@
             panel1.Controls.Add(button3);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(108, 438);
+            panel1.Size = new Size(108, 9000);
             panel1.TabIndex = 15;
             // 
             // MessagesButton
@@ -70,9 +65,9 @@
             MessagesButton.Text = "Messages";
             MessagesButton.UseVisualStyleBackColor = false;
             MessagesButton.Click += Messages_Click;
-            // 
-            // label1
-            // 
+            MessagesButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Label 1
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(10, 9);
@@ -80,9 +75,9 @@
             label1.Size = new Size(94, 15);
             label1.TabIndex = 15;
             label1.Text = "Message System";
-            // 
-            // button4
-            // 
+            label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Button 4
             button4.BackColor = Color.Green;
             button4.ForeColor = SystemColors.ButtonHighlight;
             button4.Location = new Point(0, 49);
@@ -92,9 +87,9 @@
             button4.Text = "Patient Info";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
-            // 
-            // button5
-            // 
+            button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Button 5
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
             button5.Location = new Point(0, 165);
@@ -104,9 +99,9 @@
             button5.Text = "Settings";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
-            // 
+            button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+
             // Paitent_Records_Button
-            // 
             Paitent_Records_Button.BackColor = Color.Green;
             Paitent_Records_Button.ForeColor = SystemColors.ButtonHighlight;
             Paitent_Records_Button.Location = new Point(1, 107);
@@ -116,9 +111,9 @@
             Paitent_Records_Button.Text = "Records";
             Paitent_Records_Button.UseVisualStyleBackColor = false;
             Paitent_Records_Button.Click += Paitent_Records_Button_Click;
-            // 
-            // button3
-            // 
+            Paitent_Records_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Button 3
             button3.BackColor = Color.Green;
             button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(0, 78);
@@ -128,9 +123,9 @@
             button3.Text = "Prescriptions";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
-            // 
-            // richTextBox1
-            // 
+            button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // RichTextBox
             richTextBox1.BackColor = SystemColors.ButtonHighlight;
             richTextBox1.Location = new Point(168, 50);
             richTextBox1.Name = "richTextBox1";
@@ -138,9 +133,9 @@
             richTextBox1.Size = new Size(526, 281);
             richTextBox1.TabIndex = 16;
             richTextBox1.Text = "";
-            // 
-            // label2
-            // 
+            richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Label 2
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(369, 15);
@@ -148,9 +143,9 @@
             label2.Size = new Size(124, 32);
             label2.TabIndex = 17;
             label2.Text = "Messages";
-            // 
-            // sendMessageButton
-            // 
+            label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Send Message Button
             sendMessageButton.BackColor = Color.Green;
             sendMessageButton.ForeColor = SystemColors.ButtonHighlight;
             sendMessageButton.Location = new Point(583, 335);
@@ -160,17 +155,17 @@
             sendMessageButton.Text = "Send Message";
             sendMessageButton.UseVisualStyleBackColor = false;
             sendMessageButton.Click += sendMessageButton_Click;
-            // 
-            // newMessageBox
-            // 
+            sendMessageButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // New Message Box
             newMessageBox.Location = new Point(168, 337);
             newMessageBox.Name = "newMessageBox";
             newMessageBox.PlaceholderText = "Enter Your Message Here";
             newMessageBox.Size = new Size(409, 23);
             newMessageBox.TabIndex = 19;
-            // 
-            // PatientComboBox
-            // 
+            newMessageBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // Patient ComboBox
             PatientComboBox.FormattingEnabled = true;
             PatientComboBox.Items.AddRange(new object[] { "Abigal Wrongstaid", "John Doe", "Jackie Robinson", "Toby Mendle" });
             PatientComboBox.Location = new Point(255, 382);
@@ -178,9 +173,9 @@
             PatientComboBox.Size = new Size(158, 23);
             PatientComboBox.TabIndex = 20;
             PatientComboBox.Text = "Patient Name";
-            // 
-            // viewMessageButton
-            // 
+            PatientComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+            // View Message Button
             viewMessageButton.BackColor = Color.Green;
             viewMessageButton.ForeColor = SystemColors.ButtonHighlight;
             viewMessageButton.Location = new Point(430, 382);
@@ -190,14 +185,9 @@
             viewMessageButton.Text = "View Messages";
             viewMessageButton.UseVisualStyleBackColor = false;
             viewMessageButton.Click += viewMessageButton_Click;
-            // 
-            // folderBrowserDialog1
-            // 
-            folderBrowserDialog1.SelectedPath = "C:\\Users\\wyatt\\Source\\Repos\\CSCI455ProjectActual\\CSCI455ProjectActual\\rawMessages\\John_Doe.txt";
-            folderBrowserDialog1.UseDescriptionForTitle = true;
-            // 
+            viewMessageButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+
             // MessageSystem
-            // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);

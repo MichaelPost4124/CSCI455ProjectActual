@@ -59,5 +59,24 @@ namespace CSCI455ProjectActual.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///John: Hey, my new meds aren&apos;t working, what should I take instead?
+        ///
+        ///Jane: Hmm, in what way are they not working? 
+        ///
+        ///John: The rash has gotten worse and now has an odd oder to it.
+        ///
+        ///Jane: Oh no let me quickly consult with my colleagues about the next plan of action.
+        ///
+        ///Jane: Okay, well after talking to my colleagues, I think you should come in for reevaluation. I have an opening at 8am on Monday, will you be able to come in then?
+        ///.
+        /// </summary>
+        internal static string John_Doe {
+            get {
+                return ResourceManager.GetString("John_Doe", resourceCulture);
+            }
+        }
     }
 }

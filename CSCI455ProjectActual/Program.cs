@@ -17,7 +17,20 @@ namespace CSCI455ProjectActual
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            string fileName = "rawMessages/John_Doe.txt";
+            try
+            {
+                using (FileStream fs = File.Create(fileName))
+                {
+                    // You can add content to the file here if needed
+                    // For example:
+                    byte[] content = System.Text.Encoding.UTF8.GetBytes(Properties.Resources.John_Doe);
+                    fs.Write(content, 0, content.Length);
+                }
+
+            }
+            catch { }
             Application.Run(new LoginPage());
-    }
+        }
     }
 }   

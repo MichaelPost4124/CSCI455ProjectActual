@@ -41,7 +41,6 @@
             newMessageBox = new TextBox();
             PatientComboBox = new ComboBox();
             viewMessageButton = new Button();
-            folderBrowserDialog1 = new FolderBrowserDialog();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -191,11 +190,6 @@
             viewMessageButton.UseVisualStyleBackColor = false;
             viewMessageButton.Click += viewMessageButton_Click;
             // 
-            // folderBrowserDialog1
-            // 
-            folderBrowserDialog1.SelectedPath = "C:\\Users\\wyatt\\Source\\Repos\\CSCI455ProjectActual\\CSCI455ProjectActual\\rawMessages\\John_Doe.txt";
-            folderBrowserDialog1.UseDescriptionForTitle = true;
-            // 
             // MessageSystem
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -232,6 +226,5 @@
         private ComboBox PatientComboBox;
         private Button viewMessageButton;
         private Button MessagesButton;
-        private FolderBrowserDialog folderBrowserDialog1;
     }
 }

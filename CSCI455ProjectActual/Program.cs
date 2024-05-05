@@ -8,7 +8,7 @@ namespace CSCI455ProjectActual
         /// </summary>
         public static Boolean dark = false;
         public static Boolean isPatient = false;
-        public static Boolean fullscreen = true;
+        public static Boolean fullscreen = false;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

@@ -26,6 +26,10 @@ namespace CSCI455ProjectActual
                 visitSummeryButton.BackColor = Color.Black;
                 MessagesButton.BackColor = Color.Black;
             }
+            if (Program.fullscreen) { // set fullscreen
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+            }
         }
 
         //patient data button click

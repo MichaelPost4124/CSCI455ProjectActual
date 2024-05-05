@@ -39,6 +39,10 @@ namespace CSCI455ProjectActual
             {
                 dataGridViewMyAllData.ReadOnly = true;
             }
+            if (Program.fullscreen) { // set fullscreen
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+            }
         }
 
         //patient data button click

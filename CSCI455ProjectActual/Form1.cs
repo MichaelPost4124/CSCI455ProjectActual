@@ -5,6 +5,10 @@ namespace CSCI455ProjectActual
         public homePage()
         {
             InitializeComponent();
+            if (Program.fullscreen) { // set fullscreen
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+            }
         }
 
         // test comment

@@ -58,6 +58,29 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMyAllData).BeginInit();
             SuspendLayout();
+
+            // set anchors for fullscreen mode
+            dataGridViewMyAllData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            conditionsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            allergiesBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            lvBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            sexBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            pcpBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            dobBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            ssnBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            nameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            insertBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            updateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+
+
             // 
             // Paitent_Records_Button
             // 
@@ -118,7 +141,7 @@
             panel1.Controls.Add(button3);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(108, 438);
+            panel1.Size = new Size(108, 9000);
             panel1.TabIndex = 14;
             // 
             // MessagesButton

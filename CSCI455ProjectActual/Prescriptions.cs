@@ -30,9 +30,10 @@ namespace CSCI455ProjectActual
                 button5.BackColor = Color.Black;
                 Paitent_Records_Button.BackColor = Color.Black;
                 panel1.BackColor = Color.DarkGray;
+                MessagesButton.BackColor = Color.Black;
 
             }
-            if(Program.isPatient)
+            if (Program.isPatient)
             {
                 dataGridViewMyAllData.ReadOnly = true;
             }
@@ -150,6 +151,13 @@ namespace CSCI455ProjectActual
             MessageBox.Show("Data was Saved in Database");
             database.mySqlConnection.Close();
             loadData();
+        }
+
+        private void Messages_Click(object sender, EventArgs e)
+        {
+            MessageSystem messageSystem = new MessageSystem();
+            this.Close();
+            messageSystem.Show();
         }
     }
 }

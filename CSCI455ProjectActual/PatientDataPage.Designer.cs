@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             Paitent_Records_Button = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             panel1 = new Panel();
+            MessagesButton = new Button();
             label1 = new Label();
             dataGridViewMyAllData = new DataGridView();
             label8 = new Label();
@@ -74,7 +75,7 @@
             // 
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(0, 136);
+            button5.Location = new Point(0, 165);
             button5.Name = "button5";
             button5.Size = new Size(104, 23);
             button5.TabIndex = 10;
@@ -109,6 +110,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 64, 0);
+            panel1.Controls.Add(MessagesButton);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button5);
@@ -118,6 +120,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(108, 438);
             panel1.TabIndex = 14;
+            // 
+            // MessagesButton
+            // 
+            MessagesButton.BackColor = Color.Green;
+            MessagesButton.ForeColor = SystemColors.ButtonHighlight;
+            MessagesButton.Location = new Point(0, 136);
+            MessagesButton.Name = "MessagesButton";
+            MessagesButton.Size = new Size(104, 23);
+            MessagesButton.TabIndex = 34;
+            MessagesButton.Text = "Messages";
+            MessagesButton.UseVisualStyleBackColor = false;
+            MessagesButton.Click += Messages_Click;
             // 
             // label1
             // 
@@ -133,14 +147,14 @@
             // 
             dataGridViewMyAllData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewMyAllData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Window;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
-            dataGridViewMyAllData.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridViewMyAllData.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewMyAllData.Location = new Point(137, 272);
             dataGridViewMyAllData.Name = "dataGridViewMyAllData";
             dataGridViewMyAllData.RowTemplate.Height = 25;
@@ -358,5 +372,6 @@
         private TextBox nameBox;
         private Button insertBtn;
         private Button updateBtn;
+        private Button MessagesButton;
     }
 }

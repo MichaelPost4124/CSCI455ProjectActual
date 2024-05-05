@@ -35,6 +35,7 @@
             darkButton = new Button();
             logOutButton = new Button();
             panel1 = new Panel();
+            MessagesButton = new Button();
             label1 = new Label();
             desktopButton = new Button();
             panel1.SuspendLayout();
@@ -56,7 +57,7 @@
             // 
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(3, 141);
+            button5.Location = new Point(3, 170);
             button5.Name = "button5";
             button5.Size = new Size(102, 23);
             button5.TabIndex = 14;
@@ -115,6 +116,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 64, 0);
+            panel1.Controls.Add(MessagesButton);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(Paitent_Records_Button);
@@ -124,6 +126,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(108, 438);
             panel1.TabIndex = 18;
+            // 
+            // MessagesButton
+            // 
+            MessagesButton.BackColor = Color.Green;
+            MessagesButton.ForeColor = SystemColors.ButtonHighlight;
+            MessagesButton.Location = new Point(1, 141);
+            MessagesButton.Name = "MessagesButton";
+            MessagesButton.Size = new Size(104, 23);
+            MessagesButton.TabIndex = 35;
+            MessagesButton.Text = "Messages";
+            MessagesButton.UseVisualStyleBackColor = false;
+            MessagesButton.Click += Messages_Click;
             // 
             // label1
             // 
@@ -176,5 +190,6 @@
         private Panel panel1;
         private Label label1;
         private Button desktopButton;
+        private Button MessagesButton;
     }
 }

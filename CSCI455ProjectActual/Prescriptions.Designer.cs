@@ -34,6 +34,7 @@
             button3 = new Button();
             dataGridViewMyAllData = new DataGridView();
             panel1 = new Panel();
+            MessagesButton = new Button();
             label1 = new Label();
             updateBtn = new Button();
             insertBtn = new Button();
@@ -57,7 +58,7 @@
             // 
             Paitent_Records_Button.BackColor = Color.Green;
             Paitent_Records_Button.ForeColor = SystemColors.ButtonHighlight;
-            Paitent_Records_Button.Location = new Point(0, 134);
+            Paitent_Records_Button.Location = new Point(0, 163);
             Paitent_Records_Button.Name = "Paitent_Records_Button";
             Paitent_Records_Button.Size = new Size(104, 23);
             Paitent_Records_Button.TabIndex = 11;
@@ -115,6 +116,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 64, 0);
+            panel1.Controls.Add(MessagesButton);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
@@ -125,6 +127,18 @@
             panel1.Size = new Size(108, 438);
             panel1.TabIndex = 13;
             panel1.Paint += panel1_Paint;
+            // 
+            // MessagesButton
+            // 
+            MessagesButton.BackColor = Color.Green;
+            MessagesButton.ForeColor = SystemColors.ButtonHighlight;
+            MessagesButton.Location = new Point(0, 134);
+            MessagesButton.Name = "MessagesButton";
+            MessagesButton.Size = new Size(104, 23);
+            MessagesButton.TabIndex = 35;
+            MessagesButton.Text = "Messages";
+            MessagesButton.UseVisualStyleBackColor = false;
+            MessagesButton.Click += Messages_Click;
             // 
             // label1
             // 
@@ -307,5 +321,6 @@
         private TextBox amountBox;
         private TextBox dateBox;
         private TextBox nameBox;
+        private Button MessagesButton;
     }
 }

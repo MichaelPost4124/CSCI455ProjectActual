@@ -25,6 +25,7 @@ namespace CSCI455ProjectActual
                 darkButton.BackColor = Color.Black;
                 logOutButton.BackColor = Color.Black;
                 desktopButton.BackColor = Color.Black;
+                MessagesButton.BackColor = Color.Black;
             }
         }
 
@@ -85,6 +86,7 @@ namespace CSCI455ProjectActual
                 darkButton.BackColor = Color.Black;
                 logOutButton.BackColor = Color.Black;
                 desktopButton.BackColor = Color.Black;
+                MessagesButton.BackColor = Color.Black;
             }
             if (!Program.dark)
             {
@@ -96,6 +98,7 @@ namespace CSCI455ProjectActual
                 darkButton.BackColor = Color.Green;
                 logOutButton.BackColor = Color.Green;
                 desktopButton.BackColor = Color.Green;
+                MessagesButton.BackColor = Color.Green;
             }
         }
 
@@ -109,6 +112,13 @@ namespace CSCI455ProjectActual
         private void desktopButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Messages_Click(object sender, EventArgs e)
+        {
+            MessageSystem messageSystem = new MessageSystem();
+            this.Close();
+            messageSystem.Show();
         }
     }
 }

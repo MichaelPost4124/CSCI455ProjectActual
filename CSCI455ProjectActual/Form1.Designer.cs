@@ -34,6 +34,7 @@
             button4 = new Button();
             button5 = new Button();
             Paitent_Records_Button = new Button();
+            MessagePCP = new Button();
             SuspendLayout();
             // 
             // label1
@@ -53,7 +54,7 @@
             // 
             button3.BackColor = Color.Green;
             button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(351, 394);
+            button3.Location = new Point(213, 394);
             button3.Name = "button3";
             button3.Size = new Size(104, 23);
             button3.TabIndex = 3;
@@ -88,9 +89,9 @@
             // 
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(634, 394);
+            button5.Location = new Point(623, 394);
             button5.Name = "button5";
-            button5.Size = new Size(81, 23);
+            button5.Size = new Size(92, 23);
             button5.TabIndex = 6;
             button5.Text = "Settings";
             button5.UseVisualStyleBackColor = false;
@@ -100,7 +101,7 @@
             // 
             Paitent_Records_Button.BackColor = Color.Green;
             Paitent_Records_Button.ForeColor = SystemColors.ButtonHighlight;
-            Paitent_Records_Button.Location = new Point(351, 360);
+            Paitent_Records_Button.Location = new Point(349, 394);
             Paitent_Records_Button.Name = "Paitent_Records_Button";
             Paitent_Records_Button.Size = new Size(104, 23);
             Paitent_Records_Button.TabIndex = 7;
@@ -108,11 +109,24 @@
             Paitent_Records_Button.UseVisualStyleBackColor = false;
             Paitent_Records_Button.Click += Paitent_Records_Button_Click;
             // 
+            // MessagePCP
+            // 
+            MessagePCP.BackColor = Color.Green;
+            MessagePCP.ForeColor = SystemColors.ButtonHighlight;
+            MessagePCP.Location = new Point(484, 394);
+            MessagePCP.Name = "MessagePCP";
+            MessagePCP.Size = new Size(104, 23);
+            MessagePCP.TabIndex = 8;
+            MessagePCP.Text = "Message PCP";
+            MessagePCP.UseVisualStyleBackColor = false;
+            MessagePCP.Click += MessagePCP_Click;
+            // 
             // homePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(MessagePCP);
             Controls.Add(Paitent_Records_Button);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -133,5 +147,6 @@
         private Button button4;
         private Button button5;
         private Button Paitent_Records_Button;
+        private Button MessagePCP;
     }
 }

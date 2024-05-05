@@ -43,5 +43,12 @@ namespace CSCI455ProjectActual
         {
 
         }
+
+        private void MessagePCP_Click(object sender, EventArgs e)
+        {
+            MessageSystem messageSystem = new MessageSystem();
+            this.Close();
+            messageSystem.Show();
+        }
     }
 }

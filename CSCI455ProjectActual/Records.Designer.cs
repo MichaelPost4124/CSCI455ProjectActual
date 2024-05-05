@@ -35,6 +35,7 @@
             recordsBox = new ComboBox();
             visitSummeryButton = new Button();
             panel1 = new Panel();
+            MessagesButton = new Button();
             label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -55,7 +56,7 @@
             // 
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(4, 134);
+            button5.Location = new Point(3, 163);
             button5.Name = "button5";
             button5.Size = new Size(101, 23);
             button5.TabIndex = 10;
@@ -114,6 +115,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 64, 0);
+            panel1.Controls.Add(MessagesButton);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
@@ -123,6 +125,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(108, 438);
             panel1.TabIndex = 14;
+            // 
+            // MessagesButton
+            // 
+            MessagesButton.BackColor = Color.Green;
+            MessagesButton.ForeColor = SystemColors.ButtonHighlight;
+            MessagesButton.Location = new Point(1, 134);
+            MessagesButton.Name = "MessagesButton";
+            MessagesButton.Size = new Size(104, 23);
+            MessagesButton.TabIndex = 35;
+            MessagesButton.Text = "Messages";
+            MessagesButton.UseVisualStyleBackColor = false;
+            MessagesButton.Click += Messages_Click;
             // 
             // label1
             // 
@@ -160,5 +174,6 @@
         private Button visitSummeryButton;
         private Panel panel1;
         private Label label1;
+        private Button MessagesButton;
     }
 }

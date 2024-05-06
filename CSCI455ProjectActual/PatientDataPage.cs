@@ -36,6 +36,16 @@ namespace CSCI455ProjectActual
             if (Program.isPatient)
             {
                 dataGridViewMyAllData.ReadOnly = true;
+                nameBox.ReadOnly = true;
+                ssnBox.ReadOnly = true;
+                dobBox.ReadOnly = true;
+                pcpBox.ReadOnly = true;
+                lvBox.ReadOnly = true;
+                sexBox.ReadOnly = true;
+                allergiesBox.ReadOnly = true;
+                conditionsBox.ReadOnly = true;
+                insertBtn.Visible = false;
+                updateBtn.Visible = false;
             }
             if (Program.fullscreen) { // set fullscreen
                 FormBorderStyle = FormBorderStyle.None;

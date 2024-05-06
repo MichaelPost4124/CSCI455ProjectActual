@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -95,8 +96,11 @@ namespace CSCI455ProjectActual
 
         private void sendMessageButton_Click(object sender, EventArgs e)
         {
-            updateLogs(newMessageBox.Text);
-            readLogs();
+            if (PatientComboBox.SelectedIndex == 1 || viewMessageButton.Visible == false)
+            {
+                updateLogs(newMessageBox.Text);
+                readLogs();
+            }
             newMessageBox.Text = "";
         }
 
@@ -105,6 +109,10 @@ namespace CSCI455ProjectActual
             if (PatientComboBox.SelectedIndex == 1)
             {
                 readLogs();
+            }
+            else
+            {
+                richTextBox1.Text = "";
             }
         }
 

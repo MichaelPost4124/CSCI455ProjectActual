@@ -96,7 +96,7 @@ namespace CSCI455ProjectActual
 
         private void sendMessageButton_Click(object sender, EventArgs e)
         {
-            if (PatientComboBox.SelectedIndex == 1)
+            if (PatientComboBox.SelectedIndex == 1 || viewMessageButton.Visible == false)
             {
                 updateLogs(newMessageBox.Text);
                 readLogs();

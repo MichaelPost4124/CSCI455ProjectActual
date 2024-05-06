@@ -18,7 +18,7 @@ namespace CSCI455ProjectActual
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            string fileName = "John_Doe.txt";
+            string fileName = "rawMessages/John_Doe.txt";
             try
             {
                 using (FileStream fs = File.Create(fileName))

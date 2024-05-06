@@ -53,30 +53,12 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewMyAllData).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
-
-            // setting anchor for fullscreen
-            dataGridViewMyAllData.Anchor = System.Windows.Forms.AnchorStyles.None;
-            updateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            insertBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            effectsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            refillsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            instructionsBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            amountBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            dateBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            nameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-
             // 
             // Paitent_Records_Button
             // 
             Paitent_Records_Button.BackColor = Color.Green;
             Paitent_Records_Button.ForeColor = SystemColors.ButtonHighlight;
-            Paitent_Records_Button.Location = new Point(0, 163);
+            Paitent_Records_Button.Location = new Point(1, 105);
             Paitent_Records_Button.Name = "Paitent_Records_Button";
             Paitent_Records_Button.Size = new Size(104, 23);
             Paitent_Records_Button.TabIndex = 11;
@@ -88,7 +70,7 @@
             // 
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(0, 105);
+            button5.Location = new Point(-1, 163);
             button5.Name = "button5";
             button5.Size = new Size(105, 23);
             button5.TabIndex = 10;
@@ -122,6 +104,7 @@
             // 
             // dataGridViewMyAllData
             // 
+            dataGridViewMyAllData.Anchor = AnchorStyles.None;
             dataGridViewMyAllData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewMyAllData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewMyAllData.Location = new Point(142, 185);
@@ -140,9 +123,9 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(Paitent_Records_Button);
             panel1.Controls.Add(button5);
-            panel1.Location = new Point(1, 0);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(108, 438);
+            panel1.Size = new Size(108, 1268);
             panel1.TabIndex = 13;
             panel1.Paint += panel1_Paint;
             // 
@@ -171,6 +154,7 @@
             // 
             // updateBtn
             // 
+            updateBtn.Anchor = AnchorStyles.None;
             updateBtn.Location = new Point(474, 144);
             updateBtn.Name = "updateBtn";
             updateBtn.Size = new Size(75, 23);
@@ -181,6 +165,7 @@
             // 
             // insertBtn
             // 
+            insertBtn.Anchor = AnchorStyles.None;
             insertBtn.Location = new Point(380, 144);
             insertBtn.Name = "insertBtn";
             insertBtn.Size = new Size(75, 23);
@@ -191,6 +176,7 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Location = new Point(482, 101);
             label6.Name = "label6";
@@ -200,6 +186,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Location = new Point(511, 59);
             label5.Name = "label5";
@@ -209,6 +196,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Location = new Point(187, 101);
             label4.Name = "label4";
@@ -218,6 +206,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Location = new Point(222, 59);
             label3.Name = "label3";
@@ -227,6 +216,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Location = new Point(480, 24);
             label2.Name = "label2";
@@ -236,6 +226,7 @@
             // 
             // label9
             // 
+            label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.Location = new Point(206, 19);
             label9.Name = "label9";
@@ -245,6 +236,7 @@
             // 
             // effectsBox
             // 
+            effectsBox.Anchor = AnchorStyles.None;
             effectsBox.Location = new Point(555, 98);
             effectsBox.Name = "effectsBox";
             effectsBox.Size = new Size(100, 23);
@@ -252,6 +244,7 @@
             // 
             // refillsBox
             // 
+            refillsBox.Anchor = AnchorStyles.None;
             refillsBox.Location = new Point(555, 56);
             refillsBox.Name = "refillsBox";
             refillsBox.Size = new Size(100, 23);
@@ -259,6 +252,7 @@
             // 
             // instructionsBox
             // 
+            instructionsBox.Anchor = AnchorStyles.None;
             instructionsBox.Location = new Point(555, 16);
             instructionsBox.Name = "instructionsBox";
             instructionsBox.Size = new Size(100, 23);
@@ -266,6 +260,7 @@
             // 
             // amountBox
             // 
+            amountBox.Anchor = AnchorStyles.None;
             amountBox.Location = new Point(317, 98);
             amountBox.Name = "amountBox";
             amountBox.Size = new Size(100, 23);
@@ -273,6 +268,7 @@
             // 
             // dateBox
             // 
+            dateBox.Anchor = AnchorStyles.None;
             dateBox.Location = new Point(317, 56);
             dateBox.Name = "dateBox";
             dateBox.Size = new Size(100, 23);
@@ -280,6 +276,7 @@
             // 
             // nameBox
             // 
+            nameBox.Anchor = AnchorStyles.None;
             nameBox.Location = new Point(317, 16);
             nameBox.Name = "nameBox";
             nameBox.Size = new Size(100, 23);

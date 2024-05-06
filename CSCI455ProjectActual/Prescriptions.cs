@@ -20,7 +20,7 @@ namespace CSCI455ProjectActual
         MySqlDataAdapter adpt;
         DataTable dt;
         int prescription_id;
-        public static readonly string[] notAllowed = { "saquinavir", "cimetidine", "fentanyl", 
+        public static readonly string[] notAllowed = { "saquinavir", "cimetidine", "fentanyl",
             "oxycodone", "desmopressin", "morphine" };
         public Prescriptions()
         {
@@ -38,8 +38,17 @@ namespace CSCI455ProjectActual
             if (Program.isPatient)
             {
                 dataGridViewMyAllData.ReadOnly = true;
+                nameBox.ReadOnly = true;
+                dateBox.ReadOnly = true;
+                amountBox.ReadOnly = true;
+                instructionsBox.ReadOnly = true;
+                refillsBox.ReadOnly = true;
+                effectsBox.ReadOnly = true;
+                insertBtn.Visible = false;
+                updateBtn.Visible = false;
             }
-            if (Program.fullscreen) { // set fullscreen
+            if (Program.fullscreen)
+            { // set fullscreen
                 FormBorderStyle = FormBorderStyle.None;
                 WindowState = FormWindowState.Maximized;
             }
@@ -130,10 +139,11 @@ namespace CSCI455ProjectActual
         private void updateBtn_Click(object sender, EventArgs e)
         {
             int pos = Array.IndexOf(notAllowed, nameBox.Text.ToLower());
-            if(pos > -1)
+            if (pos > -1)
             {
                 MessageBox.Show("This Drug Interacts with Currently Prescribed Drugs.");
-            } else
+            }
+            else
             {
                 try
                 {
@@ -159,7 +169,8 @@ namespace CSCI455ProjectActual
             if (pos > -1)
             {
                 MessageBox.Show("This Drug Interacts with Currently Prescribed Drugs.");
-            } else
+            }
+            else
             {
                 database.mySqlConnection.Open();
                 cmd = new MySqlCommand("insert into prescriptionInfo values('" + prescription_id + "','" + nameBox.Text + "','" + dateBox.Text +

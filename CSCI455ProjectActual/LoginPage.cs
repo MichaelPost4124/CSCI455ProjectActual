@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * LoginPage.cs
+ * This file is meant to handle LoginPage's functionality.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +57,11 @@ namespace CSCI455ProjectActual
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
         {
 
         }

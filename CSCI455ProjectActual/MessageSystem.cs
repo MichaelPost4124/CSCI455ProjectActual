@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * MessageSystem.cs
+ * This file is meant to handle MessageSystem's functionality.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +40,8 @@ namespace CSCI455ProjectActual
                 viewMessageButton.Visible = false;
                 PatientComboBox.Visible = false;
             }
-            if (Program.fullscreen) { // set fullscreen
+            if (Program.fullscreen)
+            { // set fullscreen
                 FormBorderStyle = FormBorderStyle.None;
                 WindowState = FormWindowState.Maximized;
             }
@@ -121,6 +129,11 @@ namespace CSCI455ProjectActual
             MessageSystem messageSystem = new MessageSystem();
             this.Close();
             messageSystem.Show();
+        }
+
+        private void MessageSystem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

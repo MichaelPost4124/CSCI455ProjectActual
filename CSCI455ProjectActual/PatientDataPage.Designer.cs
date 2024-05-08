@@ -1,4 +1,11 @@
-﻿namespace CSCI455ProjectActual
+﻿/*
+ * PatientDataPage.Designer.cs
+ * This file is meant to display PatientDataPage's GUI.
+ * Created by Michael Post
+ * Created on April 30, 2024
+ */
+
+namespace CSCI455ProjectActual
 {
     partial class PatientDataPage
     {

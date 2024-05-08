@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Prescriptions.cs
+ * This file is meant to handle Prescriptions's functionality.
+ * Created by Michael Post
+ * Created on April 30, 2024
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

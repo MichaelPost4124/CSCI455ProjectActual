@@ -1,4 +1,11 @@
-﻿namespace CSCI455ProjectActual
+﻿/*
+ * viewable_pdf.Designer.cs
+ * This file is meant to display viewable_pdf's GUI.
+ * Created by Wyatt Hanson
+ * Created on May 2, 2024
+ */
+
+namespace CSCI455ProjectActual
 {
     partial class viewable_pdf
     {
@@ -46,6 +53,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 

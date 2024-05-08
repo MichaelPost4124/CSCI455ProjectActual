@@ -1,4 +1,11 @@
-﻿namespace CSCI455ProjectActual
+﻿/*
+ * Form1.Designer.cs
+ * This file is meant to display Form1's GUI.
+ * Created by Michael Post
+ * Created on April 30, 2024
+ */
+
+namespace CSCI455ProjectActual
 {
     partial class homePage
     {
@@ -143,6 +150,7 @@
             Name = "homePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
+            Load += homePage_Load;
             ResumeLayout(false);
             PerformLayout();
         }

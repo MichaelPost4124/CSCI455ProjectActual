@@ -1,4 +1,12 @@
-﻿using MySql.Data.MySqlClient;
+﻿/*
+ * database.cs
+ * This file is meant to handle connecting to the remote server
+ * where the database design and data is located.
+ * Created by Michael Post
+ * Created on May 2, 2024
+ */
+
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;

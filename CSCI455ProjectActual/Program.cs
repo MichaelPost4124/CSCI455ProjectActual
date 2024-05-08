@@ -1,3 +1,10 @@
+/*
+ * Program.cs
+ * This file is meant to handle some functionality in Records.cs.
+ * Created by Wyat Hanson
+ * Created on May 2, 2024
+ */
+
 namespace CSCI455ProjectActual
 {
     internal static class Program

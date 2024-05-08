@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Settings.cs
+ * This file is meant to handle Records's functionality.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +35,8 @@ namespace CSCI455ProjectActual
                 MessagesButton.BackColor = Color.Black;
                 fullscreenButton.BackColor = Color.Black;
             }
-            if (Program.fullscreen) { // set fullscreen
+            if (Program.fullscreen)
+            { // set fullscreen
                 FormBorderStyle = FormBorderStyle.None;
                 WindowState = FormWindowState.Maximized;
             }
@@ -36,7 +44,7 @@ namespace CSCI455ProjectActual
 
         private void Settings_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         //patient data button click
@@ -129,22 +137,33 @@ namespace CSCI455ProjectActual
         }
 
 
-        private void fullscreenButton_Click(object sender, EventArgs e) { // Button to toggle fullscreen
-       
-            if (Program.fullscreen) {
+        private void fullscreenButton_Click(object sender, EventArgs e)
+        { // Button to toggle fullscreen
+
+            if (Program.fullscreen)
+            {
                 Program.fullscreen = false;
-            } else {
+            }
+            else
+            {
                 Program.fullscreen = true;
             }
 
-            if (Program.fullscreen) { // set fullscreen
+            if (Program.fullscreen)
+            { // set fullscreen
                 FormBorderStyle = FormBorderStyle.None;
                 WindowState = FormWindowState.Maximized;
-            } else { // set windowed
+            }
+            else
+            { // set windowed
                 FormBorderStyle = FormBorderStyle.Sizable;
                 WindowState = FormWindowState.Normal;
             }
         }
 
+        private void Settings_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

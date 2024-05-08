@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * viewable_pdf.cs
+ * This file is meant to handle viewable_pdf's functionality.
+ * Created by Wyatt Hanson
+ * Created on May 2, 2024
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +22,11 @@ namespace CSCI455ProjectActual
         public viewable_pdf()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

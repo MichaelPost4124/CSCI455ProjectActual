@@ -1,3 +1,10 @@
+/*
+ * Form1.cs
+ * This file is meant to handle Form1's functionality.
+ * Created by Michael Post
+ * Created on April 30, 2024
+ */
+
 namespace CSCI455ProjectActual
 {
     public partial class homePage : Form
@@ -54,6 +61,11 @@ namespace CSCI455ProjectActual
             MessageSystem messageSystem = new MessageSystem();
             this.Close();
             messageSystem.Show();
+        }
+
+        private void homePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

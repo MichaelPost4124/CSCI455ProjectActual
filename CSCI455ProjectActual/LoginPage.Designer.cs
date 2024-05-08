@@ -1,4 +1,11 @@
-﻿namespace CSCI455ProjectActual
+﻿/*
+ * LoginPage.Designer.cs
+ * This file is meant to display LoginPage's GUI.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+namespace CSCI455ProjectActual
 {
     partial class LoginPage
     {
@@ -105,6 +112,7 @@
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginPage";
+            Load += LoginPage_Load;
             ((System.ComponentModel.ISupportInitialize)Login_UND).EndInit();
             ResumeLayout(false);
             PerformLayout();

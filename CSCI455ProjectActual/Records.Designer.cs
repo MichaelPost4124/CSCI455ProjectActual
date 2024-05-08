@@ -1,4 +1,11 @@
-﻿namespace CSCI455ProjectActual
+﻿/*
+ * Records.Designer.cs
+ * This file is meant to display Records's GUI.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+namespace CSCI455ProjectActual
 {
     partial class Records
     {

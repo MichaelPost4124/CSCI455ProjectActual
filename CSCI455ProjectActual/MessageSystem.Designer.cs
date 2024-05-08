@@ -1,4 +1,11 @@
-﻿namespace CSCI455ProjectActual {
+﻿/*
+ * MessageSystem.Designer.cs
+ * This file is meant to display MessageSystem's GUI.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+namespace CSCI455ProjectActual {
     partial class MessageSystem {
         /// <summary>
         /// Required designer variable.
@@ -22,7 +29,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             panel1 = new Panel();
             MessagesButton = new Button();
             label1 = new Label();
@@ -55,6 +63,7 @@
             // 
             // MessagesButton
             // 
+            MessagesButton.Anchor = AnchorStyles.None;
             MessagesButton.BackColor = Color.Green;
             MessagesButton.ForeColor = SystemColors.ButtonHighlight;
             MessagesButton.Location = new Point(1, 136);
@@ -64,9 +73,10 @@
             MessagesButton.Text = "Messages";
             MessagesButton.UseVisualStyleBackColor = false;
             MessagesButton.Click += Messages_Click;
-            MessagesButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Label 1
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(10, 9);
@@ -74,9 +84,10 @@
             label1.Size = new Size(94, 15);
             label1.TabIndex = 15;
             label1.Text = "Message System";
-            label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Button 4
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.None;
             button4.BackColor = Color.Green;
             button4.ForeColor = SystemColors.ButtonHighlight;
             button4.Location = new Point(0, 49);
@@ -86,9 +97,10 @@
             button4.Text = "Patient Info";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
-            button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Button 5
+            // 
+            // button5
+            // 
+            button5.Anchor = AnchorStyles.None;
             button5.BackColor = Color.Green;
             button5.ForeColor = SystemColors.ButtonHighlight;
             button5.Location = new Point(0, 165);
@@ -98,9 +110,10 @@
             button5.Text = "Settings";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
-            button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-
+            // 
             // Paitent_Records_Button
+            // 
+            Paitent_Records_Button.Anchor = AnchorStyles.None;
             Paitent_Records_Button.BackColor = Color.Green;
             Paitent_Records_Button.ForeColor = SystemColors.ButtonHighlight;
             Paitent_Records_Button.Location = new Point(1, 107);
@@ -110,9 +123,10 @@
             Paitent_Records_Button.Text = "Records";
             Paitent_Records_Button.UseVisualStyleBackColor = false;
             Paitent_Records_Button.Click += Paitent_Records_Button_Click;
-            Paitent_Records_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Button 3
+            // 
+            // button3
+            // 
+            button3.Anchor = AnchorStyles.None;
             button3.BackColor = Color.Green;
             button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(0, 78);
@@ -122,9 +136,10 @@
             button3.Text = "Prescriptions";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
-            button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // RichTextBox
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Anchor = AnchorStyles.None;
             richTextBox1.BackColor = SystemColors.ButtonHighlight;
             richTextBox1.Location = new Point(168, 50);
             richTextBox1.Name = "richTextBox1";
@@ -132,9 +147,10 @@
             richTextBox1.Size = new Size(526, 281);
             richTextBox1.TabIndex = 16;
             richTextBox1.Text = "";
-            richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Label 2
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(369, 15);
@@ -142,9 +158,10 @@
             label2.Size = new Size(124, 32);
             label2.TabIndex = 17;
             label2.Text = "Messages";
-            label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Send Message Button
+            // 
+            // sendMessageButton
+            // 
+            sendMessageButton.Anchor = AnchorStyles.None;
             sendMessageButton.BackColor = Color.Green;
             sendMessageButton.ForeColor = SystemColors.ButtonHighlight;
             sendMessageButton.Location = new Point(583, 335);
@@ -154,17 +171,19 @@
             sendMessageButton.Text = "Send Message";
             sendMessageButton.UseVisualStyleBackColor = false;
             sendMessageButton.Click += sendMessageButton_Click;
-            sendMessageButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // New Message Box
+            // 
+            // newMessageBox
+            // 
+            newMessageBox.Anchor = AnchorStyles.None;
             newMessageBox.Location = new Point(168, 337);
             newMessageBox.Name = "newMessageBox";
             newMessageBox.PlaceholderText = "Enter Your Message Here";
             newMessageBox.Size = new Size(409, 23);
             newMessageBox.TabIndex = 19;
-            newMessageBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // Patient ComboBox
+            // 
+            // PatientComboBox
+            // 
+            PatientComboBox.Anchor = AnchorStyles.None;
             PatientComboBox.FormattingEnabled = true;
             PatientComboBox.Items.AddRange(new object[] { "Abigal Wrongstaid", "John Doe", "Jackie Robinson", "Toby Mendle" });
             PatientComboBox.Location = new Point(255, 382);
@@ -172,9 +191,10 @@
             PatientComboBox.Size = new Size(158, 23);
             PatientComboBox.TabIndex = 20;
             PatientComboBox.Text = "Patient Name";
-            PatientComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-
-            // View Message Button
+            // 
+            // viewMessageButton
+            // 
+            viewMessageButton.Anchor = AnchorStyles.None;
             viewMessageButton.BackColor = Color.Green;
             viewMessageButton.ForeColor = SystemColors.ButtonHighlight;
             viewMessageButton.Location = new Point(430, 382);
@@ -184,9 +204,9 @@
             viewMessageButton.Text = "View Messages";
             viewMessageButton.UseVisualStyleBackColor = false;
             viewMessageButton.Click += viewMessageButton_Click;
-            viewMessageButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-
+            // 
             // MessageSystem
+            // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
@@ -200,6 +220,7 @@
             Name = "MessageSystem";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MessageSystem";
+            Load += MessageSystem_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

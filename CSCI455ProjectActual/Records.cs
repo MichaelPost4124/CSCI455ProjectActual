@@ -1,4 +1,11 @@
-﻿using Mysqlx.Crud;
+﻿/*
+ * Records.cs
+ * This file is meant to handle Records's functionality.
+ * Created by Wyatt Hanson
+ * Created on April 30, 2024
+ */
+
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

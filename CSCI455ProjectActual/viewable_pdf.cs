@@ -19,6 +19,9 @@ namespace CSCI455ProjectActual
 {
     public partial class viewable_pdf : Form
     {
+        /// <summary>
+        /// Initializes the pdf to be viewed
+        /// </summary>
         public viewable_pdf()
         {
             InitializeComponent();

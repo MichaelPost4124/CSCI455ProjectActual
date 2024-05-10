@@ -20,6 +20,9 @@ namespace CSCI455ProjectActual
 {
     public partial class MessageSystem : Form
     {
+        /// <summary>
+        /// Initializes MessageSystem to be viewed
+        /// </summary>
         public MessageSystem()
         {
             InitializeComponent();
@@ -47,13 +50,20 @@ namespace CSCI455ProjectActual
             }
 
         }
-        //reads the text file for the doctor
+        /// <summary>
+        /// reads the patient log for the doctor
+        /// </summary>
+        /// <returns> void </returns>
         private void readLogs()
         {
             string content = File.ReadAllText(@"John_Doe.txt");
             richTextBox1.Text = content;
         }
-        //adds to the text file for conversation
+        /// <summary>
+        /// Updates the text logs from either the doctor or patient
+        /// </summary>
+        /// <param name="text">The text to be sent to the log</param>
+        /// <returns> void </returns>
         private void updateLogs(string text)
         {
             String toBeAdded;
@@ -70,7 +80,12 @@ namespace CSCI455ProjectActual
                 writer.WriteLine(toBeAdded);
             }
         }
-        //patient data button click
+        /// <summary>
+        /// Navigates to patientDataPage from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button4_Click(object sender, EventArgs e)
         {
             PatientDataPage patientDataPage = new PatientDataPage();
@@ -78,7 +93,12 @@ namespace CSCI455ProjectActual
             patientDataPage.Show();
         }
 
-        //Records page button click
+        /// <summary>
+        /// Navigates to records from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Paitent_Records_Button_Click(object sender, EventArgs e)
         {
             Records records = new Records();
@@ -86,7 +106,12 @@ namespace CSCI455ProjectActual
             records.Show();
         }
 
-        //Prescriptions page button click
+        /// <summary>
+        /// Navigates to Prescriptions from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button3_Click(object sender, EventArgs e)
         {
             Prescriptions prescriptions = new Prescriptions();
@@ -94,14 +119,24 @@ namespace CSCI455ProjectActual
             prescriptions.Show();
         }
 
-        //Settings button click
+        /// <summary>
+        /// Navigates to Settings from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button5_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
             this.Close();
             settings.Show();
         }
-
+        /// <summary>
+        /// sends message to patient or doctor
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void sendMessageButton_Click(object sender, EventArgs e)
         {
             if (PatientComboBox.SelectedIndex == 1 || viewMessageButton.Visible == false)
@@ -111,7 +146,12 @@ namespace CSCI455ProjectActual
             }
             newMessageBox.Text = "";
         }
-
+        /// <summary>
+        /// Views mesage after selecting the patient
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void viewMessageButton_Click(object sender, EventArgs e)
         {
             if (PatientComboBox.SelectedIndex == 1)
@@ -123,7 +163,12 @@ namespace CSCI455ProjectActual
                 richTextBox1.Text = "";
             }
         }
-
+        /// <summary>
+        /// Navigates to MessageSystem from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Messages_Click(object sender, EventArgs e)
         {
             MessageSystem messageSystem = new MessageSystem();

@@ -19,11 +19,19 @@ namespace CSCI455ProjectActual
 {
     public partial class LoginPage : Form
     {
+        /// <summary>
+        /// Initializes LoginPage to be viewed
+        /// </summary>
         public LoginPage()
         {
             InitializeComponent();
         }
-        // Makes homepage Invisible and opens Navigation Page
+        /// <summary>
+        /// Enables login of either doctor or patient
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Login_Button_Click(object sender, EventArgs e)
         {
             if ((Username_TextBox.Text).Equals("John") && (Password_TextBox.Text).Equals("password"))

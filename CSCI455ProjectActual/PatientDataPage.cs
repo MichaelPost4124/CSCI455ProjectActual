@@ -28,6 +28,9 @@ namespace CSCI455ProjectActual
         MySqlDataAdapter adpt;
         DataTable dt;
         int user_id;
+        /// <summary>
+        /// Initializes PatientDataPage to be viewed
+        /// </summary>
         public PatientDataPage()
         {
             InitializeComponent();
@@ -60,7 +63,12 @@ namespace CSCI455ProjectActual
             }
         }
 
-        //patient data button click
+        /// <summary>
+        /// Navigates to patientDataPage from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button4_Click(object sender, EventArgs e)
         {
             PatientDataPage patientDataPage = new PatientDataPage();
@@ -68,7 +76,12 @@ namespace CSCI455ProjectActual
             patientDataPage.Show();
         }
 
-        //Records page button click
+        /// <summary>
+        /// Navigates to records from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Paitent_Records_Button_Click(object sender, EventArgs e)
         {
             Records records = new Records();
@@ -76,7 +89,12 @@ namespace CSCI455ProjectActual
             records.Show();
         }
 
-        //Prescriptions page button click
+        /// <summary>
+        /// Navigates to Prescriptions from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button3_Click(object sender, EventArgs e)
         {
             Prescriptions prescriptions = new Prescriptions();
@@ -84,19 +102,32 @@ namespace CSCI455ProjectActual
             prescriptions.Show();
         }
 
-        //Settings button click
+        /// <summary>
+        /// Navigates to Settings from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button5_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
             this.Close();
             settings.Show();
         }
-
+        /// <summary>
+        /// loads patient data after button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void PatientDataPage_Load(object sender, EventArgs e)
         {
             loadData();
         }
-
+        /// <summary>
+        /// loads patient data from database
+        /// </summary>
+        /// <returns> void </returns>
         public void loadData()
         {
             if (database.connect_db())
@@ -125,7 +156,12 @@ namespace CSCI455ProjectActual
             // dataGridViewMyAllData.DataSource = dt;
 
         }
-
+        /// <summary>
+        /// Views the patient data into data grid
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">the data grid view n</param>
+        /// <returns> void </returns>
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             user_id = Convert.ToInt32(dataGridViewMyAllData.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -139,7 +175,12 @@ namespace CSCI455ProjectActual
             conditionsBox.Text = dataGridViewMyAllData.Rows[e.RowIndex].Cells[8].Value.ToString();
 
         }
-
+        /// <summary>
+        /// Updates a patients information from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void updateBtn_Click(object sender, EventArgs e)
         {
             try
@@ -158,7 +199,12 @@ namespace CSCI455ProjectActual
                 MessageBox.Show(ex.Message);
             }
         }
-
+        /// <summary>
+        /// Inserts a new patient into the database from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void insertBtn_Click(object sender, EventArgs e)
         {
             database.mySqlConnection.Open();
@@ -171,7 +217,12 @@ namespace CSCI455ProjectActual
             database.mySqlConnection.Close();
             loadData();
         }
-
+        /// <summary>
+        /// Navigates to MessageSystem from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Messages_Click(object sender, EventArgs e)
         {
             MessageSystem messageSystem = new MessageSystem();

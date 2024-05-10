@@ -9,6 +9,9 @@ namespace CSCI455ProjectActual
 {
     public partial class homePage : Form
     {
+        /// <summary>
+        /// Initializes Homepage to be viewed
+        /// </summary>
         public homePage()
         {
             InitializeComponent();
@@ -19,8 +22,12 @@ namespace CSCI455ProjectActual
             }
         }
 
-        // test comment
-        //patient data button click
+        /// <summary>
+        /// Navigates to patientDataPage from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button4_Click(object sender, EventArgs e)
         {
             PatientDataPage patientDataPage = new PatientDataPage();
@@ -28,7 +35,12 @@ namespace CSCI455ProjectActual
             patientDataPage.Show();
         }
 
-        //Records page button click
+        /// <summary>
+        /// Navigates to records from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Paitent_Records_Button_Click(object sender, EventArgs e)
         {
             Records records = new Records();
@@ -36,7 +48,12 @@ namespace CSCI455ProjectActual
             records.Show();
         }
 
-        //Prescriptions page button click
+        /// <summary>
+        /// Navigates to Prescriptions from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button3_Click(object sender, EventArgs e)
         {
             Prescriptions prescriptions = new Prescriptions();
@@ -44,7 +61,12 @@ namespace CSCI455ProjectActual
             prescriptions.Show();
         }
 
-        //Settings button click
+        /// <summary>
+        /// Navigates to Settings from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button5_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
@@ -55,7 +77,12 @@ namespace CSCI455ProjectActual
         {
 
         }
-
+        /// <summary>
+        /// Navigates to MessageSystem from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void MessagePCP_Click(object sender, EventArgs e)
         {
             MessageSystem messageSystem = new MessageSystem();

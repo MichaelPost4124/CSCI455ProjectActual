@@ -19,6 +19,9 @@ namespace CSCI455ProjectActual
 {
     public partial class Settings : Form
     {
+        /// <summary>
+        /// Initializes Settings to be viewed
+        /// </summary>
         public Settings()
         {
             InitializeComponent();
@@ -47,7 +50,12 @@ namespace CSCI455ProjectActual
 
         }
 
-        //patient data button click
+        /// <summary>
+        /// Navigates to patientDataPage from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button4_Click(object sender, EventArgs e)
         {
             PatientDataPage patientDataPage = new PatientDataPage();
@@ -55,7 +63,12 @@ namespace CSCI455ProjectActual
             patientDataPage.Show();
         }
 
-        //Records page button click
+        /// <summary>
+        /// Navigates to records from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Paitent_Records_Button_Click(object sender, EventArgs e)
         {
             Records records = new Records();
@@ -63,7 +76,12 @@ namespace CSCI455ProjectActual
             records.Show();
         }
 
-        //Prescriptions page button click
+        /// <summary>
+        /// Navigates to Prescriptions from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button3_Click(object sender, EventArgs e)
         {
             Prescriptions prescriptions = new Prescriptions();
@@ -71,14 +89,24 @@ namespace CSCI455ProjectActual
             prescriptions.Show();
         }
 
-        //Settings button click
+        /// <summary>
+        /// Navigates to Settings from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button5_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
             this.Close();
             settings.Show();
         }
-
+        /// <summary>
+        /// Makes the current Settings page into dark mode
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void darkButton_Click(object sender, EventArgs e)
         {
             if (Program.dark)
@@ -116,19 +144,34 @@ namespace CSCI455ProjectActual
                 fullscreenButton.BackColor = Color.Green;
             }
         }
-
+        /// <summary>
+        /// Navigates to login page and logs out
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void logOutButton_Click(object sender, EventArgs e)
         {
             LoginPage loginPage = new LoginPage();
             this.Close();
             loginPage.Show();
         }
-
+        /// <summary>
+        /// Closes the application to desktop
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void desktopButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// Navigates to MessageSystem from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Messages_Click(object sender, EventArgs e)
         {
             MessageSystem messageSystem = new MessageSystem();
@@ -136,7 +179,12 @@ namespace CSCI455ProjectActual
             messageSystem.Show();
         }
 
-
+        /// <summary>
+        /// Toggles to FullScreen view
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void fullscreenButton_Click(object sender, EventArgs e)
         { // Button to toggle fullscreen
 

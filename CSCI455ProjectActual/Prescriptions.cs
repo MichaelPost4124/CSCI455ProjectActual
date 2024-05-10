@@ -29,6 +29,9 @@ namespace CSCI455ProjectActual
         int prescription_id;
         public static readonly string[] notAllowed = { "saquinavir", "cimetidine", "fentanyl",
             "oxycodone", "desmopressin", "morphine" };
+        /// <summary>
+        /// Initializes Prescriptions to be viewed
+        /// </summary>
         public Prescriptions()
         {
             InitializeComponent();
@@ -61,7 +64,12 @@ namespace CSCI455ProjectActual
             }
         }
 
-        //patient data button click
+        /// <summary>
+        /// Navigates to patientDataPage from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button4_Click(object sender, EventArgs e)
         {
             PatientDataPage patientDataPage = new PatientDataPage();
@@ -69,7 +77,12 @@ namespace CSCI455ProjectActual
             patientDataPage.Show();
         }
 
-        //Records page button click
+        /// <summary>
+        /// Navigates to records from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Paitent_Records_Button_Click(object sender, EventArgs e)
         {
             Records records = new Records();
@@ -77,7 +90,12 @@ namespace CSCI455ProjectActual
             records.Show();
         }
 
-        //Prescriptions page button click
+        /// <summary>
+        /// Navigates to Prescriptions from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button3_Click(object sender, EventArgs e)
         {
             Prescriptions prescriptions = new Prescriptions();
@@ -85,19 +103,32 @@ namespace CSCI455ProjectActual
             prescriptions.Show();
         }
 
-        //Settings button click
+        /// <summary>
+        /// Navigates to Settings from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void button5_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
             this.Close();
             settings.Show();
         }
-
+        /// <summary>
+        /// Loads Prescription info from database
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Prescriptions_Load(object sender, EventArgs e)
         {
             loadData();
         }
-
+        /// <summary>
+        /// connects to database to retrive information
+        /// </summary>
+        /// <returns> void </returns>
         public void loadData()
         {
             if (database.connect_db())
@@ -121,7 +152,12 @@ namespace CSCI455ProjectActual
                 MessageBox.Show("Database error");
             }
         }
-
+        /// <summary>
+        /// Views Database into grid format for page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The data view grid to be updated</param>
+        /// <returns> void </returns>
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             prescription_id = Convert.ToInt32(dataGridViewMyAllData.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -142,7 +178,12 @@ namespace CSCI455ProjectActual
         {
 
         }
-
+        /// <summary>
+        /// Updates the database from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void updateBtn_Click(object sender, EventArgs e)
         {
             int pos = Array.IndexOf(notAllowed, nameBox.Text.ToLower());
@@ -169,7 +210,12 @@ namespace CSCI455ProjectActual
                 }
             }
         }
-
+        /// <summary>
+        /// Inserts a new drug into the data base from button click
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void insertBtn_Click(object sender, EventArgs e)
         {
             int pos = Array.IndexOf(notAllowed, nameBox.Text.ToLower());
@@ -190,7 +236,12 @@ namespace CSCI455ProjectActual
                 loadData();
             }
         }
-
+        /// <summary>
+        /// Navigates to MessageSystem from button click and closes page
+        /// </summary>
+        /// <param name="sender">The button clicked.</param>
+        /// <param name="e">The click of the button</param>
+        /// <returns> void </returns>
         private void Messages_Click(object sender, EventArgs e)
         {
             MessageSystem messageSystem = new MessageSystem();

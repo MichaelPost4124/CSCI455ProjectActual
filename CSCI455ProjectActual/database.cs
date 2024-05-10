@@ -16,6 +16,9 @@ using MySql.Data;
 
 namespace CSCI455ProjectActual
 {
+    /// <summary>
+    /// Creates a class to initilize the connection to the database
+    /// </summary>
     internal class Database
     {
         static readonly string server = "sql5.freesqldatabase.com";
@@ -24,6 +27,9 @@ namespace CSCI455ProjectActual
         static readonly string database = "sql5703611";
         public static string connection_string = "server='" + server + "'; user= '" + user + "'; database= '" + database + "'; password= '" + password + "'";
         public MySqlConnection mySqlConnection = new MySqlConnection(connection_string);
+        /// <summary>
+        /// Opens a connection to the data base
+        /// </summary>
         public bool connect_db()
         {
             try
@@ -36,6 +42,9 @@ namespace CSCI455ProjectActual
                 return false;
             }
         }
+        /// <summary>
+        /// closes the database connection
+        /// </summary>
         public bool close_db()
         {
             try
